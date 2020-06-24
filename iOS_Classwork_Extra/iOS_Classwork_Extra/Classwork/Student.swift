@@ -15,7 +15,21 @@ import Foundation
 /// 2. track: String
 /// 3. gender: String
 
-//struct ...
+struct Student{
+   var  name: String
+   var  track: String
+   var  gender: String
+    func imageName () -> String{
+        if gender == "boy" {
+            return "boyProfileImage"
+        }
+        else{
+            return "girlProfileImage"
+        }
+    }
+}
+ 
+
 
 
 
@@ -23,9 +37,10 @@ import Foundation
 
 // MARK:  2️⃣ قم بإنشاء دالة بداخل الهيكل باسم imageName()
 /**
+
 لدينا صور في داخل مجل `Assets.xcassets`
  - هناك صورة  لولد باسم `boyProfileImage`
-  - وهناك صورة أخرى لبنت باسم `girlProfileImage`
+  - وهناك صورة أخرى لبنت ب9اسم `girlProfileImage`
  
  
 قم بكتابة دالة method بداخل الستركت Student، ترجع نص من نوع String، باسم imageName
@@ -50,13 +65,12 @@ import Foundation
 
 // كتبنالك ياها عشان لا تقول (مووعاريف أكتب مصفوففة وااااع 😭)
 // امسح الكود واكتبه بطريقتك المبدعة 😍
-//var students: [Student] =
-//    [
-//        Student(...
-//        Student(...
-//        Student(...
-//    ]
-
+var students: [Student] =
+[
+    Student(name:"ريم خالد", track: "iOS", gender: "girl"),
+    Student(name: "صالح شهاب", track: "Web", gender: "boy"),
+    Student(name:"مجمد علي", track: "Anndroid", gender: " boy"),
+]
 
 
 
